@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.B {
+    margin-bottom: 20px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box4 {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.cube, .cube1, .cube2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cube {
+    background-color: #e0e0e0;
+}
+
+.cube1 {
+    background-color: black;
+    color: white;
+}
+
+.cube2 {
+    background-color: red;
+    color: white;
+}
+.point.equal {
+    background-color: rgb(92, 89, 89);
+    color: white;
+    width: 300px; /* Increase the width here */
+    height: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Small screens */
+@media (max-width: 600px) {
+    .cube, .cube1, .cube2 {
+        width: 45px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    #display {
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .point.equal {
+        width: 260px; /* Adjust the width for small screens */
+        height: 5px;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 601px) and (max-width: 1200px) {
+    .cube, .cube1, .cube2 {
+        width: 55px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    #display {
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .point.equal {
+        width: 300px; /* Adjust the width for medium screens */
+        height: 55px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1201px) {
+    .cube, .cube1, .cube2 {
+        width: 70px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    #display {
+        height: 55px;
+        font-size: 24px;
+    }
+
+    .point.equal {
+        width: 315px; /* Adjust the width for large screens */
+        height: 70px;
+    }
+}
